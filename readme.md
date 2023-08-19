@@ -2,7 +2,7 @@
 
 ✨This repository contains the code of the kubernetes manifest files.
 
-## 🏠 Architecture
+## Architecture
  Coming soon
 
 ## Execution steps
@@ -10,15 +10,14 @@
 
 ### Test: 
 - This job tests the code. After the test job is completed, CircleCI proceeds to the next job. 
-- Note: I didn't add this job to save time. 😎
 
 ### Build: 
 - In the build job, CircleCI pulls the base Docker images and packages our application code inside the image.
 
-### 🪠 Push: 
+### Push: 
 - The push job pushes the newly generated images to Docker Hub with a new tag.
 
-### 🆕 Update Manifest: 
+### Update Manifest: 
 - After the successful completion of the push job,now the last job is executed, which updates the Kubernetes manifest repository with the new tag. This enables ArgoCD to detect the change and apply it to the cluster.
 
 By following this pipeline, we ensure that our application code is thoroughly tested, built into Docker images, and deployed with the updated manifest using the GitOps approach.
