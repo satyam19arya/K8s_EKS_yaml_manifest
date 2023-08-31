@@ -3,7 +3,8 @@
 ✨This repository contains the code of the kubernetes manifest files.
 
 ## Architecture
- Coming soon
+ <img width="659" alt="image" src="https://github.com/satyam19arya/K8s_EKS_yaml_manifest/assets/77580311/97f426b1-92c1-4554-b5d4-c60c8105d999">
+
 
 ## Execution steps
 When CircleCI notices any changes in the application code, it starts executing the jobs that we have set up. There are a total of four jobs.
